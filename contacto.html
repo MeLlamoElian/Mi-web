@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeLlamoElián - Sugerencias</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>MeLlamoElián 👾</h1>
+        <p>Opinión de series, juegos y películas sin saber nada pero esta chistoso.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="analisis.html">Análisis</a></li>
+            <li><a href="contacto.html">Sugerencias</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="formulario-canal">
+            <h2>Buzón de Sugerencias y Colaboraciones</h2>
+            <p>¿Hay alguna serie oculta que merece una review? ¿Querés debatir sobre algún guion o proponer una idea para el próximo video especial? Dejame tus datos acá abajo:</p>
+
+            <form class="mi-formulario" action="#" method="POST">
+                
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre o Nickname:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: FanDeLaAnimacion" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">Contacto (Email):</label>
+                    <input type="email" id="email" name="email" placeholder="tu-correo@ejemplo.com" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="tipo_obra">¿Qué tipo de contenido sugerís?</label>
+                    <select id="tipo_obra" name="tipo_obra">
+                        <option value="serie">Serie Animada de TV</option>
+                        <option value="pelicula">Película de Cine</option>
+                        <option value="juego">Videojuego de Culto / Indie</option>
+                        <option value="debate">Debate de Fandom / Lore</option>
+                    </select>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="mensaje">Detallá tu propuesta (¿Por qué debería hacerle un video?):</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí acá tu recomendación o propuesta de análisis..." required></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <button type="submit" class="boton-enviar">Mandar Propuesta 🚀</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabajo de @eliansoy.</p>
+    </footer>
+
+</body>
+</html>
