@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f; 
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #1a1a1a; 
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+}
+
+h2, h3 {
+    color: #0088ff;            
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #2d2d2d;
+    margin: 25px 0;
+}
+
+header {
+    background-color: #141414;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px solid #ff003c; 
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+nav {
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #2d2d2d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 18px 30px;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff003c;
+    color: #ffffff;
+}
+
+.boton-accion {
+    display: inline-block;
+    background-color: #0088ff;
+    color: #ffffff;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.boton-accion:hover {
+    transform: scale(1.05);
+    background-color: #0066cc;
+}
+
+
+.contenedor-tabla {
+    width: 100%;
+    overflow-x: auto;          
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #141414;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-precios th, .tabla-precios td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.tabla-precios th {
+    background-color: #0088ff;
+    color: #ffffff;
+}
+
+.tabla-precios tbody tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+
+.estado {
+    padding: 4px 8px;
+    border-radius: 20px; 
+    font-size: 0.7rem;
+    font-weight: bold;
+    white-space: nowrap;        
+    display: inline-block;
+}
+.disponible { background-color: #10b981; color: white; }
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tarjeta-video {
+    background-color: #141414;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen-miniatura {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-contenido {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta-contenido h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.tarjeta-contenido p {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.boton-ver-video {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #ff003c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.boton-ver-video:hover {
+    background-color: #cc0030;
+}
+
+.mi-formulario {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.grupo-campo {
+    margin-bottom: 22px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.grupo-campo input[type="text"],
+.grupo-campo input[type="email"],
+.grupo-campo select,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #141414;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-family: inherit;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: #0088ff;
+}
+
+.boton-enviar {
+    background-color: #ff003c;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #cc0030;
+}
